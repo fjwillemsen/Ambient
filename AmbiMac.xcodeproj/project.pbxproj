@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E18E3AB1EB4089000CE3DE5 /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E18E3AA1EB4089000CE3DE5 /* press_smartbridge.png */; };
+		5E18E3AE1EB4096800CE3DE5 /* zLinkBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E3AC1EB4096800CE3DE5 /* zLinkBridge.swift */; };
+		5E18E3AF1EB4096800CE3DE5 /* zLinkBridge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E18E3AD1EB4096800CE3DE5 /* zLinkBridge.xib */; };
+		5E18E3B21EB40A9000CE3DE5 /* zHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E3B01EB40A9000CE3DE5 /* zHome.swift */; };
+		5E18E3B31EB40A9000CE3DE5 /* zHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E18E3B11EB40A9000CE3DE5 /* zHome.xib */; };
+		5E18E3B51EB40B9100CE3DE5 /* press_smartbridge_failed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E18E3B41EB40B9100CE3DE5 /* press_smartbridge_failed.png */; };
+		5E6518871EB535F500B01A84 /* zAmbiLightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6518861EB535F500B01A84 /* zAmbiLightController.swift */; };
+		5EE2E94F1EB1E12100BDE9A8 /* progressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE2E94D1EB1E12100BDE9A8 /* progressVC.swift */; };
+		5EE2E9501EB1E12100BDE9A8 /* progressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE2E94E1EB1E12100BDE9A8 /* progressVC.xib */; };
+		5EEC17C01EB2A58400009B6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC17BF1EB2A58400009B6D /* MainMenu.xib */; };
+		5EEC17C51EB2A69200009B6D /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC17C31EB2A69200009B6D /* welcomeVC.swift */; };
+		5EEC17C61EB2A69200009B6D /* welcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC17C41EB2A69200009B6D /* welcomeVC.xib */; };
+		5EEC17D51EB2A9EA00009B6D /* zConnectBridgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC17D31EB2A9EA00009B6D /* zConnectBridgeVC.swift */; };
+		5EEC17D61EB2A9EA00009B6D /* zConnectBridgeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEC17D41EB2A9EA00009B6D /* zConnectBridgeVC.xib */; };
+		5EED46421EB1042300DAE706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EED46411EB1042300DAE706 /* AppDelegate.swift */; };
+		5EED46461EB1042300DAE706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EED46451EB1042300DAE706 /* Assets.xcassets */; };
+		5EED47201EB10D2500DAE706 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED471F1EB10D2500DAE706 /* SystemConfiguration.framework */; };
+		5EED47311EB10E8800DAE706 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED47231EB10E8800DAE706 /* DDAbstractDatabaseLogger.m */; };
+		5EED47321EB10E8800DAE706 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED47251EB10E8800DAE706 /* DDASLLogger.m */; };
+		5EED47331EB10E8800DAE706 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED47271EB10E8800DAE706 /* DDFileLogger.m */; };
+		5EED47341EB10E8800DAE706 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED47291EB10E8800DAE706 /* DDLog.m */; };
+		5EED47351EB10E8800DAE706 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED472B1EB10E8800DAE706 /* DDTTYLogger.m */; };
+		5EED47361EB10E8800DAE706 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED472E1EB10E8800DAE706 /* ContextFilterLogFormatter.m */; };
+		5EED47371EB10E8800DAE706 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED47301EB10E8800DAE706 /* DispatchQueueLogFormatter.m */; };
+		5EED47391EB10EBE00DAE706 /* HueSDK_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED47381EB10EBE00DAE706 /* HueSDK_OSX.framework */; };
+		5EED473A1EB10EBE00DAE706 /* HueSDK_OSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EED47381EB10EBE00DAE706 /* HueSDK_OSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5EED473B1EB10EBE00DAE706 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5EED473A1EB10EBE00DAE706 /* HueSDK_OSX.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E18E3AA1EB4089000CE3DE5 /* press_smartbridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge.png; sourceTree = "<group>"; };
+		5E18E3AC1EB4096800CE3DE5 /* zLinkBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zLinkBridge.swift; sourceTree = "<group>"; };
+		5E18E3AD1EB4096800CE3DE5 /* zLinkBridge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zLinkBridge.xib; sourceTree = "<group>"; };
+		5E18E3B01EB40A9000CE3DE5 /* zHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zHome.swift; sourceTree = "<group>"; };
+		5E18E3B11EB40A9000CE3DE5 /* zHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zHome.xib; sourceTree = "<group>"; };
+		5E18E3B41EB40B9100CE3DE5 /* press_smartbridge_failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge_failed.png; sourceTree = "<group>"; };
+		5E6518861EB535F500B01A84 /* zAmbiLightController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zAmbiLightController.swift; sourceTree = "<group>"; };
+		5EE2E94D1EB1E12100BDE9A8 /* progressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = progressVC.swift; sourceTree = "<group>"; };
+		5EE2E94E1EB1E12100BDE9A8 /* progressVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = progressVC.xib; sourceTree = "<group>"; };
+		5EEC17BF1EB2A58400009B6D /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		5EEC17C31EB2A69200009B6D /* welcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
+		5EEC17C41EB2A69200009B6D /* welcomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = welcomeVC.xib; sourceTree = "<group>"; };
+		5EEC17D31EB2A9EA00009B6D /* zConnectBridgeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zConnectBridgeVC.swift; sourceTree = "<group>"; };
+		5EEC17D41EB2A9EA00009B6D /* zConnectBridgeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zConnectBridgeVC.xib; sourceTree = "<group>"; };
+		5EED463E1EB1042300DAE706 /* AmbiMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbiMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EED46411EB1042300DAE706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EED46451EB1042300DAE706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EED464A1EB1042300DAE706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EED46541EB104C800DAE706 /* AmbiMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmbiMac-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		5EED471F1EB10D2500DAE706 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5EED47221EB10E8800DAE706 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		5EED47231EB10E8800DAE706 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		5EED47241EB10E8800DAE706 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		5EED47251EB10E8800DAE706 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		5EED47261EB10E8800DAE706 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		5EED47271EB10E8800DAE706 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		5EED47281EB10E8800DAE706 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		5EED47291EB10E8800DAE706 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		5EED472A1EB10E8800DAE706 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		5EED472B1EB10E8800DAE706 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		5EED472D1EB10E8800DAE706 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		5EED472E1EB10E8800DAE706 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		5EED472F1EB10E8800DAE706 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		5EED47301EB10E8800DAE706 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		5EED47381EB10EBE00DAE706 /* HueSDK_OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_OSX.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EED463B1EB1042300DAE706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EED47201EB10D2500DAE706 /* SystemConfiguration.framework in Frameworks */,
+				5EED47391EB10EBE00DAE706 /* HueSDK_OSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EED46351EB1042300DAE706 = {
+			isa = PBXGroup;
+			children = (
+				5EED47381EB10EBE00DAE706 /* HueSDK_OSX.framework */,
+				5EED47211EB10E8800DAE706 /* Lumberjack */,
+				5EED46401EB1042300DAE706 /* AmbiMac */,
+				5EED463F1EB1042300DAE706 /* Products */,
+				5EED46501EB1047100DAE706 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5EED463F1EB1042300DAE706 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EED463E1EB1042300DAE706 /* AmbiMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EED46401EB1042300DAE706 /* AmbiMac */ = {
+			isa = PBXGroup;
+			children = (
+				5EED464A1EB1042300DAE706 /* Info.plist */,
+				5EED46451EB1042300DAE706 /* Assets.xcassets */,
+				5EED46411EB1042300DAE706 /* AppDelegate.swift */,
+				5E18E3B01EB40A9000CE3DE5 /* zHome.swift */,
+				5E18E3B11EB40A9000CE3DE5 /* zHome.xib */,
+				5EE2E94D1EB1E12100BDE9A8 /* progressVC.swift */,
+				5EE2E94E1EB1E12100BDE9A8 /* progressVC.xib */,
+				5EED46541EB104C800DAE706 /* AmbiMac-Bridging-Header.h */,
+				5EEC17BF1EB2A58400009B6D /* MainMenu.xib */,
+				5EEC17C31EB2A69200009B6D /* welcomeVC.swift */,
+				5EEC17C41EB2A69200009B6D /* welcomeVC.xib */,
+				5EEC17D31EB2A9EA00009B6D /* zConnectBridgeVC.swift */,
+				5EEC17D41EB2A9EA00009B6D /* zConnectBridgeVC.xib */,
+				5E18E3AC1EB4096800CE3DE5 /* zLinkBridge.swift */,
+				5E6518861EB535F500B01A84 /* zAmbiLightController.swift */,
+				5E18E3AD1EB4096800CE3DE5 /* zLinkBridge.xib */,
+				5E18E3AA1EB4089000CE3DE5 /* press_smartbridge.png */,
+				5E18E3B41EB40B9100CE3DE5 /* press_smartbridge_failed.png */,
+			);
+			path = AmbiMac;
+			sourceTree = "<group>";
+		};
+		5EED46501EB1047100DAE706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EED471F1EB10D2500DAE706 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EED47211EB10E8800DAE706 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				5EED47221EB10E8800DAE706 /* DDAbstractDatabaseLogger.h */,
+				5EED47231EB10E8800DAE706 /* DDAbstractDatabaseLogger.m */,
+				5EED47241EB10E8800DAE706 /* DDASLLogger.h */,
+				5EED47251EB10E8800DAE706 /* DDASLLogger.m */,
+				5EED47261EB10E8800DAE706 /* DDFileLogger.h */,
+				5EED47271EB10E8800DAE706 /* DDFileLogger.m */,
+				5EED47281EB10E8800DAE706 /* DDLog.h */,
+				5EED47291EB10E8800DAE706 /* DDLog.m */,
+				5EED472A1EB10E8800DAE706 /* DDTTYLogger.h */,
+				5EED472B1EB10E8800DAE706 /* DDTTYLogger.m */,
+				5EED472C1EB10E8800DAE706 /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		5EED472C1EB10E8800DAE706 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EED472D1EB10E8800DAE706 /* ContextFilterLogFormatter.h */,
+				5EED472E1EB10E8800DAE706 /* ContextFilterLogFormatter.m */,
+				5EED472F1EB10E8800DAE706 /* DispatchQueueLogFormatter.h */,
+				5EED47301EB10E8800DAE706 /* DispatchQueueLogFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EED463D1EB1042300DAE706 /* AmbiMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EED464D1EB1042300DAE706 /* Build configuration list for PBXNativeTarget "AmbiMac" */;
+			buildPhases = (
+				5EED463A1EB1042300DAE706 /* Sources */,
+				5EED463B1EB1042300DAE706 /* Frameworks */,
+				5EED463C1EB1042300DAE706 /* Resources */,
+				5EED473B1EB10EBE00DAE706 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmbiMac;
+			productName = AmbiMac;
+			productReference = 5EED463E1EB1042300DAE706 /* AmbiMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EED46361EB1042300DAE706 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Floris-Jan Willemsen";
+				TargetAttributes = {
+					5EED463D1EB1042300DAE706 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = BL75YFVYW4;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5EED46391EB1042300DAE706 /* Build configuration list for PBXProject "AmbiMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EED46351EB1042300DAE706;
+			productRefGroup = 5EED463F1EB1042300DAE706 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EED463D1EB1042300DAE706 /* AmbiMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EED463C1EB1042300DAE706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EED46461EB1042300DAE706 /* Assets.xcassets in Resources */,
+				5E18E3B51EB40B9100CE3DE5 /* press_smartbridge_failed.png in Resources */,
+				5E18E3AB1EB4089000CE3DE5 /* press_smartbridge.png in Resources */,
+				5EE2E9501EB1E12100BDE9A8 /* progressVC.xib in Resources */,
+				5EEC17C01EB2A58400009B6D /* MainMenu.xib in Resources */,
+				5EEC17D61EB2A9EA00009B6D /* zConnectBridgeVC.xib in Resources */,
+				5E18E3B31EB40A9000CE3DE5 /* zHome.xib in Resources */,
+				5E18E3AF1EB4096800CE3DE5 /* zLinkBridge.xib in Resources */,
+				5EEC17C61EB2A69200009B6D /* welcomeVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EED463A1EB1042300DAE706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EED47341EB10E8800DAE706 /* DDLog.m in Sources */,
+				5EED47321EB10E8800DAE706 /* DDASLLogger.m in Sources */,
+				5EED46421EB1042300DAE706 /* AppDelegate.swift in Sources */,
+				5EED47371EB10E8800DAE706 /* DispatchQueueLogFormatter.m in Sources */,
+				5EED47311EB10E8800DAE706 /* DDAbstractDatabaseLogger.m in Sources */,
+				5EED47351EB10E8800DAE706 /* DDTTYLogger.m in Sources */,
+				5EEC17D51EB2A9EA00009B6D /* zConnectBridgeVC.swift in Sources */,
+				5EED47331EB10E8800DAE706 /* DDFileLogger.m in Sources */,
+				5EED47361EB10E8800DAE706 /* ContextFilterLogFormatter.m in Sources */,
+				5E18E3AE1EB4096800CE3DE5 /* zLinkBridge.swift in Sources */,
+				5EE2E94F1EB1E12100BDE9A8 /* progressVC.swift in Sources */,
+				5EEC17C51EB2A69200009B6D /* welcomeVC.swift in Sources */,
+				5E6518871EB535F500B01A84 /* zAmbiLightController.swift in Sources */,
+				5E18E3B21EB40A9000CE3DE5 /* zHome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5EED464B1EB1042300DAE706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EED464C1EB1042300DAE706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		5EED464E1EB1042300DAE706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BL75YFVYW4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QuickStartApp_OSX",
+				);
+				INFOPLIST_FILE = AmbiMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Rebel.AmbiMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmbiMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5EED464F1EB1042300DAE706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BL75YFVYW4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QuickStartApp_OSX",
+				);
+				INFOPLIST_FILE = AmbiMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Rebel.AmbiMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmbiMac-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EED46391EB1042300DAE706 /* Build configuration list for PBXProject "AmbiMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EED464B1EB1042300DAE706 /* Debug */,
+				5EED464C1EB1042300DAE706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EED464D1EB1042300DAE706 /* Build configuration list for PBXNativeTarget "AmbiMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EED464E1EB1042300DAE706 /* Debug */,
+				5EED464F1EB1042300DAE706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EED46361EB1042300DAE706 /* Project object */;
+}
